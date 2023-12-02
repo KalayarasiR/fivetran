@@ -18,4 +18,4 @@ SELECT
     Country,
     Email,
     Load_dts
-FROM {{ source('stage', 'STUDNET_DETAILS') }}
+FROM {{ source('stage', 'STUDENT_DETAILS') }}
