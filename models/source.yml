@@ -1,0 +1,7 @@
+version: 2
+sources:
+  - name: stage 
+    database: POC_TARGET
+    schema: SNOWFLAKE_DB_STUDENT
+    tables: 
+      - name: STUDENT_DETAILS
