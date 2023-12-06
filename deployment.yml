@@ -1,10 +1,4 @@
 jobs:
-  - name: Update_Version
-    schedule: '*/30 * * * *' 
-    steps:
-     - name: version
-       command: dbt --version
-
   - name: Run_Job
     targetName: dev
     schedule: 1 * * * *
