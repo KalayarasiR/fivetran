@@ -1,0 +1,15 @@
+jobs:
+  - name: Every_30mins
+    schedule: '*/30 * * * *' 
+    steps:
+     - name: version
+       command: dbt --version
+
+  - name: Daily_Run
+    targetName: dev
+    schedule: 1 * * * *
+    steps:
+      - name: run models 
+        command: dbt run 
+      - name: test models
+        command: dbt test 
